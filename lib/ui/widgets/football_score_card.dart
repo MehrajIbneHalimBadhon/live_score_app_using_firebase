@@ -13,14 +13,14 @@ class FootBallScoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 3,
-      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             _buildTeam(footBall.team1Name, footBall.team1Score),
-            Text('vs'),
+            const Text('vs'),
             _buildTeam(footBall.team2Name, footBall.team2Score)
           ],
         ),
@@ -33,14 +33,14 @@ class FootBallScoreCard extends StatelessWidget {
       children: [
         Text(
           score.toString(),
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w500,
           ),
         ),
         Text(
           teamName,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w400,
           ),
